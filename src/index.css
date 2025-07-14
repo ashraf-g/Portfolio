@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  body {
+    @apply bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark transition-colors duration-300;
+  }
+
+  /* Smooth transitions for all color changes */
+  * {
+    @apply transition-colors duration-200;
+  }
+}
+
+@font-face {
+  font-family: "burtons";
+  src: url("../public/fonts/Burtons.otf");
+}
